@@ -39,10 +39,12 @@ class SemanticLoss(nn.Module):
 
         # Initialize the semantic components
         self.semantic_feature_extractor = AutoFeatureExtractor.from_pretrained(
-            "facebook/w2v-bert-2.0"
+            "pretrained/w2v-bert-2.0"
+            # "facebook/w2v-bert-2.0"
         )
         self.semantic_model = AutoModel.from_pretrained(
-            "facebook/w2v-bert-2.0"
+            "pretrained/w2v-bert-2.0"
+            # "facebook/w2v-bert-2.0"
         )
         self.semantic_model.to(self.device)
         self.semantic_model.eval()

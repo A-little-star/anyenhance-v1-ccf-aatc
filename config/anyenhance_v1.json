@@ -4,8 +4,8 @@
         "batch_size": 32,
         "num_workers": 16,
         "seq_len": 133120, // 512 * 260, ~3.1s
-        "jsonl_file_path": "/mnt/data4/zhangjunan/ccf-aatc/data/train_v1/train_v1.jsonl",
-        "test_noisy_path": "./dataset/debug_audio/noisy",
+        "jsonl_file_path": "/home/work_nfs11/fe_data/data/CCF_AATC_2025_Challenge/Track1/train_v1/train_v1.jsonl",
+        "test_noisy_path": "./dataset/debug_audio/noisy"
     },
     "model": {
         "dac_path": "./pretrained/dac/weights.pth",
@@ -51,8 +51,8 @@
         "encoder_loss": [
             {
                 "type": "semantic",
-                "weight": 1.0,
-            },
+                "weight": 1.0
+            }
         ],
         "optimizer": "adam",
         "adam": {
@@ -71,6 +71,6 @@
         "save_every_step": 1000,
         "keep_every_step": 100000,
         "eval_every_step": 5000,
-        "keep_ckpts": 1,
+        "keep_ckpts": 1
     }
 }

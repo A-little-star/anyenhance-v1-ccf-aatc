@@ -4,6 +4,7 @@ __pycache__/
 /pretrained/
 /dataset/test_audio/
 /data_simulation/example/simulated/
+/decode/
 
 *.out
 /script/

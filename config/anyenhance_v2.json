@@ -1,10 +1,11 @@
+// 相比v1，v2的模型结构没有变化，只是训练数据集从train_v1.jsonl变成了train_v2.jsonl
 {
     "dataset": {
         "sample_rate": 44100,
         "batch_size": 32,
         "num_workers": 16,
         "seq_len": 133120, // 512 * 260, ~3.1s
-        "jsonl_file_path": "/home/work_nfs11/fe_data/data/CCF_AATC_2025_Challenge/Track1/train_v1/train_v1.jsonl",
+        "jsonl_file_path": "/home/node50_ssd/zkliu/anyenhance-v1-ccf-aatc/data/old_type/train_v2.json",
         "test_noisy_path": "./dataset/debug_audio/noisy"
     },
     "model": {
